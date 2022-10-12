@@ -54,8 +54,7 @@
         <section class="hero">
             <div class="countainer">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="hero-button" type="button">Замовити послугу</button>
-            </div>
+                <button type="button" class="hero-button" data-modal-open >Замовити послугу</button>
         </section>
         <section class="section">
             <div class="countainer">
@@ -398,6 +397,20 @@
                 </div>
           </div>
     </footer>
+    <div div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+    
+            <button type="button" class="button-look" data-modal-close><svg class="button-hero-icon" width="11px"
+                    height="11px">
+                    <use href="./images/x.svg#icon-Vector"></use>
+                </svg></button>
+        </div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
