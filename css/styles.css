@@ -90,6 +90,15 @@ a {
     color: var(--bluebrand-clor);
 }
 
+.link::after {
+    display: block;
+    content: "";
+    color: transparent var(--bluebrand-clor);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
 .auth-link {
     display: flex;
     justify-content: center;
@@ -107,10 +116,12 @@ a {
 }
 
 .auth-link:hover,
-.auth-link:focus,
+.auth-link:focus {
+    color: var(--bluebrand-clor);
+}
+
 .auth-link:hover .auth-icon,
 .auth-link:focus .auth-icon {
-    color: var(--bluebrand-clor);
     fill: var(--bluebrand-clor);
 }
 
