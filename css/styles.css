@@ -95,13 +95,13 @@ a {
 
 .link.current::after {
     position: absolute;
-    display: block;
+    display: inline;
     content: "";
     background-color: var(--bluebrand-clor);
     /* font-weight: 500;
     font-size: 14px;
     line-height: 1.14; */
-    top: 43px;
+    top: 68px;
     left: 0;
     width: 100%;
     height: 5px;
