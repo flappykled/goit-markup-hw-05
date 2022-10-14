@@ -87,6 +87,7 @@ a {
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--bluebrand-clor);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link.current {
@@ -127,11 +128,13 @@ a {
 .auth-link:hover,
 .auth-link:focus {
     color: var(--bluebrand-clor);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-link:hover .auth-icon,
 .auth-link:focus .auth-icon {
     fill: var(--bluebrand-clor);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav {
@@ -204,6 +207,16 @@ a {
     position: fixed;
     top: 0%;
     background-color: rgba(0, 0, 0, 0.1);
+    transition: opasity 2s;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden.modal {
+    transform: scale(0);
 }
 
 .modal {
@@ -424,13 +437,16 @@ a {
 .name-soc-link:hover, 
 .name-soc-link:focus {
     background-color: var(--bluebrand-clor);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .name-soc-link:hover .name-soc-icon {
     fill: #FFFFFF;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .name-soc-link:focus .name-soc-icon {
     fill:  #FFFFFF;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -472,13 +488,16 @@ a {
 .customers-link:hover,
 .customers-link:focus {
     border-color: var(--bluebrand-clor);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover .customers-icon{
     fill: var(--bluebrand-clor);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link:focus .customers-icon {
     fill: var(--bluebrand-clor);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* footer */
@@ -521,6 +540,7 @@ a {
 .address-page .link:hover,
 .address-page .link:focus {
     color: var(--bluebrand-clor);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .studio-footer{
@@ -569,15 +589,18 @@ a {
 .footer-soc-link:hover,
 .footer-soc-link:focus {
     background-color: var(--bluebrand-clor)
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link:hover
 .footer-soc-link:focus .footer-soc-icon {
     fill: #FFFFFF;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-icon {
     fill: #FFFFFF;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .marg-button {
@@ -615,6 +638,7 @@ a {
 .button-item:hover,
 .button-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-item:not(:last-child) {
@@ -628,6 +652,7 @@ a {
 .main-button:focus {
     color: #fff;
     background-color: var(--bluebrand-clor);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project {
@@ -641,14 +666,19 @@ a {
 .project-item {
     width: calc((100% - 90px) / 3);
     border: 1px solid #EEEEEE;
+    border: none;
 }
+
+
 
 .project-item:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-item:hover .project-bottom-text {
+.project-bottom-link:hover .project-bottom-text {
     transform: translateY(0%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-bottom-info {
@@ -667,9 +697,9 @@ a {
     padding: 63px;
     height: 100%;
     width: 370px;
+    
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
 
 .project-product {
