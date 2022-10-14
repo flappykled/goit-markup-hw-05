@@ -72,6 +72,7 @@ a {
     margin-left: 50px;
 }
 
+
 .site-nav .link {
     position: relative;
     display: block;
@@ -87,7 +88,6 @@ a {
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--bluebrand-clor);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link.current {
@@ -128,13 +128,13 @@ a {
 .auth-link:hover,
 .auth-link:focus {
     color: var(--bluebrand-clor);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .auth-link:hover .auth-icon,
 .auth-link:focus .auth-icon {
     fill: var(--bluebrand-clor);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .auth-nav {
@@ -197,6 +197,7 @@ a {
     height: 50px;
     border-radius: 4px;
     border: none;
+    transition: background-color 0.25s ease-in-out;
     
 
 }
@@ -215,7 +216,7 @@ a {
     pointer-events: none;
 }
 
-.backdrop.is-hidden.modal {
+.backdrop.is-hidden .modal {
     transform: scale(0);
 }
 
@@ -228,6 +229,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: transform 2s;
 }
 
 .button-look {
@@ -427,6 +429,7 @@ a {
     justify-content: center;
     border-radius: 50%;
     background-color: #FFFFFF;
+    transition: background-color 0.25s ease-in-out;
 }
 
 .name-soc-icon {
@@ -437,16 +440,16 @@ a {
 .name-soc-link:hover, 
 .name-soc-link:focus {
     background-color: var(--bluebrand-clor);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .name-soc-link:hover .name-soc-icon {
     fill: #FFFFFF;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .name-soc-link:focus .name-soc-icon {
     fill:  #FFFFFF;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 
@@ -478,6 +481,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.25s ease-in-out;
     
 }
 
@@ -488,16 +492,16 @@ a {
 .customers-link:hover,
 .customers-link:focus {
     border-color: var(--bluebrand-clor);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .customers-link:hover .customers-icon{
     fill: var(--bluebrand-clor);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .customers-link:focus .customers-icon {
     fill: var(--bluebrand-clor);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 /* footer */
@@ -535,12 +539,13 @@ a {
     color:rgba(255, 255, 255, 0.6);
     font-size: 14px;
     line-height: 1.71;
+    transition: background-color 0.25s ease-in-out;
 }
 
 .address-page .link:hover,
 .address-page .link:focus {
     color: var(--bluebrand-clor);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .studio-footer{
@@ -579,6 +584,7 @@ a {
     height: 44px;
     border-radius: 50%;
     background-color:rgba(255, 255, 255, 0.1);
+    transition: background-color 0.25s ease-in-out;
     
 }
 
@@ -588,19 +594,19 @@ a {
 
 .footer-soc-link:hover,
 .footer-soc-link:focus {
-    background-color: var(--bluebrand-clor)
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--bluebrand-clor);
+    
 }
 
 .footer-soc-link:hover
 .footer-soc-link:focus .footer-soc-icon {
     fill: #FFFFFF;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .footer-soc-icon {
     fill: #FFFFFF;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .marg-button {
@@ -619,6 +625,7 @@ a {
     border-radius: 4px;
     margin-bottom: 50px;
     
+    
 }
 
 
@@ -632,6 +639,7 @@ a {
     border: 0;
     border-radius: 4px;
     padding: 6px 22px;
+    transition: background-color 0.25s ease-in-out;
     
 }
 
@@ -652,7 +660,7 @@ a {
 .main-button:focus {
     color: #fff;
     background-color: var(--bluebrand-clor);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .project {
