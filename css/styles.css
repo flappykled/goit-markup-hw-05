@@ -199,7 +199,7 @@ a {
     height: 50px;
     border-radius: 4px;
     border: none;
-    transition: background-color 0.25s ease-in-out;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 
 }
@@ -211,6 +211,8 @@ a {
     top: 0%;
     background-color: rgba(0, 0, 0, 0.1);
     transition: opasity 2s;
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -219,7 +221,8 @@ a {
 }
 
 .backdrop.is-hidden .modal {
-    transform: scale(0);
+    transform: scale(0.9);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -230,8 +233,8 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    transition: transform 2s;
+    transform: scale(1) translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-look {
@@ -243,14 +246,13 @@ a {
     height: 30px;
     top: 10px;
     right: 10px;
-
 }
 
-.is-hidden {
+/* .is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-}
+} */
 
 .particular {
     padding-top: 47px;
@@ -470,14 +472,12 @@ a {
 
 .customers-list {
     display: flex;
-    gap: 30px;
-    transition: background-color 0.25s ease-in-out;
+    gap: 30px;  
 }
 
 .customers-item {
     width: calc((100% - 150px)/6);
-    height: 92px;
-    
+    height: 92px; 
 }
 
 .customers-link {
@@ -487,8 +487,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
+    transform: scale(1);
+    transition: transform 250ms ease-in-out;
 }
 
 .customers-icon {
@@ -503,10 +503,14 @@ a {
 
 .customers-link:hover .customers-icon{
     fill: var(--bluebrand-clor);
+    transform: scale(1);
+    transition: transform 250ms ease-in-out;
     
 }
 .customers-link:focus .customers-icon {
     fill: var(--bluebrand-clor);
+    transform: scale(1);
+    transition: transform 250ms ease-in-out;
     
 }
 
