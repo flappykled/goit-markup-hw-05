@@ -114,6 +114,8 @@ a {
     justify-content: center;
     align-items: center;
     color: var(--discription-color);
+    font-weight: 500;
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     
@@ -338,8 +340,10 @@ a {
     left: 0;
     color: #FFFFFF;
     background-color: rgba(47, 48, 58, 0.8);
+    font-size: 14px;
     line-height: 1.14;
     font-weight: 700;
+    text-transform: uppercase;
     padding: 27px;
     height: 70px;
     width: 370px;
@@ -467,11 +471,13 @@ a {
 .customers-list {
     display: flex;
     gap: 30px;
+    transition: background-color 0.25s ease-in-out;
 }
 
 .customers-item {
     width: calc((100% - 150px)/6);
     height: 92px;
+    
 }
 
 .customers-link {
@@ -481,7 +487,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.25s ease-in-out;
+    
     
 }
 
